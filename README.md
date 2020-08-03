@@ -124,15 +124,15 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
  
 - evaluation metric: Gross conversion
  
-  - - p-value: 1.0843941709026694e-06 , Statistically Significant: True
+  - p-value: 1.0843941709026694e-06 , Statistically Significant: True
  
 - evaluation metric: Retention
 
-  - - p-value: 0.09887174959294497 , Statistically Significant: False
+  - p-value: 0.09887174959294497 , Statistically Significant: False
  
 - evaluation metric: Net conversion
 
-  - - p-value: 0.007632078602910038 , Statistically Significant: True
+  - p-value: 0.007632078602910038 , Statistically Significant: True
  
 ### Conclusion
 
