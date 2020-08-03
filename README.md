@@ -46,9 +46,9 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
     
 --- sample size to estimate the standard deviation: 5000 pageviews    
 
-- - std of gross_conversion baseline 0.0202
-- - std of retention baseline 0.0549
-- - std of net_conversion baseline 0.0156
+  - std of gross_conversion baseline 0.0202
+  - std of retention baseline 0.0549
+  - std of net_conversion baseline 0.0156
 
 **Step 4: Sizing** 
 
@@ -59,38 +59,38 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
 ---alph: 0.95
 ---beta: 0.2
 
-- - because the unit of diversion in this project is unique cookies that review the course page, so when calculating the pageviews needed for each of the evaluation metric, the unit of analysis(the denominator) should be converted to equivalent to the sample pageviews.
+- because the unit of diversion in this project is unique cookies that review the course page, so when calculating the pageviews needed for each of the evaluation metric, the unit of analysis(the denominator) should be converted to equivalent to the sample pageviews.
 
- - - pageview needed for gross_conversion 645875.0
- - - pageview needed for retention 4741212
- - - pageview needed for net_conversion 685325.0
+  - pageview needed for gross_conversion 645875.0
+  - pageview needed for retention 4741212
+  - pageview needed for net_conversion 685325.0
 
 - Duration and exposure
 
-- - The maximum pageview numbers needed to cover all the three metrics is 4741212, however it will take too much time to collect such big volume pagevies, so the next best number of pageview is 685325.0
+  - The maximum pageview numbers needed to cover all the three metrics is 4741212, however it will take too much time to collect such big volume pagevies, so the next best number of pageview is 685325.0
 
 **Step 5: Sanity Check** 
 
 - invariant metric: Number of cookies, check if the data size is equally assigned to control group and experiment group
 
- - - probability of pagevies in control group 0.5006 
- - - upper bound of pageview probability in control group 0.5012
- - - lower bound of pageview probability in control group 0.4988
- - - sanity check of pageviews: pass
+  - probability of pagevies in control group 0.5006 
+  - upper bound of pageview probability in control group 0.5012
+  - lower bound of pageview probability in control group 0.4988
+  - sanity check of pageviews: pass
  
 - invariant metric: Number of clicks, check if the data size is equally in control group and experiment group
  
- - - probability of clicks in control group 0.5005
- - - upper bound of clicks probability in control group 0.5041
- - - lower bound of clicks probability in control group 0.4959
- - - sanity check of clicks: pass
+  - probability of clicks in control group 0.5005
+  - upper bound of clicks probability in control group 0.5041
+  - lower bound of clicks probability in control group 0.4959
+  - sanity check of clicks: pass
 
 - invariant metric: Click-through-probability, check if the this probability is equal in control group and experiment group
 
- - - difference of ctp between control group and experiment group 0.0001
- - - upper bound of confidence interval 0.0013
- - - lower bound of confidence interval -0.0013
- - - sanity check of click through probability: pass
+  - difference of ctp between control group and experiment group 0.0001
+  - upper bound of confidence interval 0.0013
+  - lower bound of confidence interval -0.0013
+  - sanity check of click through probability: pass
 
 **Step 6: Effect size tests** 
 
@@ -98,27 +98,27 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
 
 - evaluation metric: Gross conversion
 
- - - difference of gross_conversion between control group and experiment group: -0.020554874580361565
- - - upper bound of gross_conversion confidence interval: -0.012
- - - lower bound of gross_conversion confidence interval: -0.0291
- - - CI did not include 0,change of gross_conversion stastistic significant: True
- - - CI did includes d_min_gross, change of gross_conversion practical significant: True
+  - difference of gross_conversion between control group and experiment group: -0.020554874580361565
+  - upper bound of gross_conversion confidence interval: -0.012
+  - lower bound of gross_conversion confidence interval: -0.0291
+  - CI did not include 0,change of gross_conversion stastistic significant: True
+  - CI did includes d_min_gross, change of gross_conversion practical significant: True
  
 - evaluation metric: Retention
 
- - - difference of retention between control group and experiment group: 0.031094804707142765
- - - upper bound of retention difference confidence interval: 0.0541
- - - lower bound of retention difference confidence interval: 0.0081
- - - CI did not include 0,change of retention stastistic significant: True
- - - CI includes d_min_retention,change of gross_conversion practical significant: False
+  - difference of retention between control group and experiment group: 0.031094804707142765
+  - upper bound of retention difference confidence interval: 0.0541
+  - lower bound of retention difference confidence interval: 0.0081
+  - CI did not include 0,change of retention stastistic significant: True
+  - CI includes d_min_retention,change of gross_conversion practical significant: False
  
 - evaluation metric: Net conversion
 
- - - difference of net_conversion between control group and experiment group: -0.0048737226745441675
- - - upper bound of net_conversion confidence interval: 0.0541
- - - lower bound of net_conversion confidence interval: 0.0081
- - - CI did includes 0, change of net_conversion stastistic significant: False
- - - CI did includes d_min_retention, change of net_conversion practical significant: False
+  - difference of net_conversion between control group and experiment group: -0.0048737226745441675
+  - upper bound of net_conversion confidence interval: 0.0541
+  - lower bound of net_conversion confidence interval: 0.0081
+  - CI did includes 0, change of net_conversion stastistic significant: False
+  - CI did includes d_min_retention, change of net_conversion practical significant: False
  
  **Step 7: sign tests** 
  
