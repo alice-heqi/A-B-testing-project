@@ -28,23 +28,23 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
 
     - Invariant metrics is the data that won’t be impacted by the tested feature change. They are used to check if there is anything wrong with experiment setup or any abnormal data collection
     
-- -	Number of cookies
-- -	Number of clicks
-- -	Click-through-probability
+ -	Number of cookies
+ -  Number of clicks
+ - Click-through-probability
 
 **Step 2: Choosing Evaluation Metrics** 
 
     - metric that will change if the test hypothesis is true, in other words, the evaluation metric is used for checking if the data before and after experiment are different and whether the difference is statistical and practical significant
     
-- -	Gross conversion
-- -	Retention
-- -	Net conversion
+ - Gross conversion
+ - Retention
+ - Net conversion
 
 **Step 3: Calculating analytic standardard deviation** 
 
     - before getting real experiment data, we need make analytic estimation such as the involved metrics’ standard deviation
     
---- sample size to estimate the standard deviation: 5000 pageviews    
+ --- sample size to estimate the standard deviation: 5000 pageviews ---   
 
   - std of gross_conversion baseline 0.0202
   - std of retention baseline 0.0549
@@ -54,10 +54,10 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
 
     - before starting the experiment, we need confirm the sample data size needed and the duration and exposure
     
-- the sample size can be calculated with this link:[sample size calculator](https://www.evanmiller.org/ab-testing/sample-size.html)
+- confirm sample size: calculated with this link:[sample size calculator](https://www.evanmiller.org/ab-testing/sample-size.html)
 
----alph: 0.95
----beta: 0.2
+ ---alph: 0.95
+ ---beta: 0.2
 
 - because the unit of diversion in this project is unique cookies that review the course page, so when calculating the pageviews needed for each of the evaluation metric, the unit of analysis(the denominator) should be converted to equivalent to the sample pageviews.
 
