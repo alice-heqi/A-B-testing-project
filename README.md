@@ -44,7 +44,7 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
 
     - before getting real experiment data, we need make analytic estimation such as the involved metrics’ standard deviation
     
- --- sample size to estimate the standard deviation: 5000 pageviews ---   
+ _ _sample size to estimate the standard deviation: 5000 pageviews_ _
 
   - std of gross_conversion baseline 0.0202
   - std of retention baseline 0.0549
@@ -56,8 +56,8 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
     
 - confirm sample size: calculated with this link:[sample size calculator](https://www.evanmiller.org/ab-testing/sample-size.html)
 
- ---alph: 0.95
- ---beta: 0.2
+ _ _---alph: 0.95
+ ---beta: 0.2_ _
 
 - because the unit of diversion in this project is unique cookies that review the course page, so when calculating the pageviews needed for each of the evaluation metric, the unit of analysis(the denominator) should be converted to equivalent to the sample pageviews.
 
