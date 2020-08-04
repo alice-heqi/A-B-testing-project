@@ -24,6 +24,8 @@ The unit of diversion is a cookie, although if the student enrolls in the free t
 - Retention: That is, number of user-ids to remain enrolled past the 14-day boundary (and thus make at least one payment) divided by number of user-ids to complete checkout. (dmin=0.01)
 - Net conversion: That is, number of user-ids to remain enrolled past the 14-day boundary (and thus make at least one payment) divided by the number of unique cookies to click the "Start free trial" button. (dmin= 0.0075)
 
+### Experiment Procedures
+
 **Step 1: Choosing Invariant Metrics** 
 
     - Invariant metrics is the data that won’t be impacted by the tested feature change. They are used to check if there is anything wrong with experiment setup or any abnormal data collection
